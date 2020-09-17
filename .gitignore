@@ -1,0 +1,31 @@
+target/
+logs/
+application-local.yml
+application-hdry.yml
+application-nfsd.yml
+application-mmry.yml
+build.xml
+build.properties
+!.mvn/com.etong.eis.patient.wrapper/maven-com.etong.eis.patient.wrapper.jar
+parent/pom.xml
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
