@@ -14,13 +14,15 @@ import java.util.Arrays;
 public class DemoServiceTest {
     @Autowired
     private DemoService demoService;
+
     //测试三位数
     @Test
     public void getWordThree() {
-        Integer[] array = new Integer[]{2, 2, 2,2};
+        Integer[] array = new Integer[]{2, 2, 2};
         System.out.println(Arrays.toString(array));
         System.out.println(demoService.getLettersByDigits(array));
     }
+
     //测试两位数
     @Test
     public void getWordOne() {

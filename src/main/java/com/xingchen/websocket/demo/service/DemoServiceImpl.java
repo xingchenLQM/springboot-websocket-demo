@@ -23,7 +23,7 @@ public class DemoServiceImpl implements DemoService {
                 }
                 List<String> result = new ArrayList<>();
                 getStr(list, 0, list.get(0), result);
-                return StringUtils.join(result, " ");
+                return StringUtils.join(result, "");
             }
 
         }
