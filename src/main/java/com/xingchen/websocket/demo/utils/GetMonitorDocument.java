@@ -25,6 +25,7 @@ public class GetMonitorDocument {
             }
             XMLStr.append(name);
         }
+        System.out.println("XMLStr:"+XMLStr);
         return DocumentHelper.parseText(XMLStr.toString());
     }
 }
