@@ -26,7 +26,7 @@ public class DeviceController {
         try {
             Document document = getMonitorDocument.getDocument("192.168.1.1", 9100);
             System.out.println();
-            object = XmlToJsonUtil.xmltoJson(document.asXML());
+            object = XmlToJsonUtil.xmlToJson(document.asXML());
             return object;
         } catch (Exception e) {
             e.printStackTrace();

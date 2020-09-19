@@ -34,7 +34,7 @@ public class HL7ToXmlConverter {
                 String sHL7Line = sHL7Lines[i];
 
                 //通过/r 或/n 回车符分隔
-                String[] sFields = GetMessgeFields(sHL7Line);
+                String[] sFields = GetMessageFields(sHL7Line);
 
                 // 为段（一行）创建第一级节点
                 Element el = document.getRootElement().addElement(sFields[0]);
@@ -103,7 +103,7 @@ public class HL7ToXmlConverter {
     /// </summary>
     /// <param name="s"></param>
     /// <returns></returns>
-    private static String[] GetMessgeFields(String s) {
+    private static String[] GetMessageFields(String s) {
         return s.split("\\|");
     }
 
