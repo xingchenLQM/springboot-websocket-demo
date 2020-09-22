@@ -7,6 +7,6 @@ import javax.jws.WebService;
 )
 public interface WebDemoService {
 
-    String sayHello(String user);
+    String sayHello(String user, Integer age);
 
 }

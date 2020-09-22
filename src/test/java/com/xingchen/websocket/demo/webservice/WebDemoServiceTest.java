@@ -22,7 +22,7 @@ public class WebDemoServiceTest {
         try {
             Object[] objects = new Object[0];
             // invoke("方法名",参数1,参数2,参数3....);
-            objects = client.invoke("sayHello", "xingchen");
+            objects = client.invoke("sayHello","xingchen",12);
             System.out.println("返回数据:" + objects[0]);
         } catch (Exception e) {
             e.printStackTrace();

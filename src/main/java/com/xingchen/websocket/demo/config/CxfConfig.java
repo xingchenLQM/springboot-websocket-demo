@@ -36,5 +36,11 @@ public class CxfConfig {
         endpoint.publish("/api");
         return endpoint;
     }
+    @Bean
+    public Endpoint endpoint2() {
+        EndpointImpl endpoint = new EndpointImpl(springBus(), demoService());
+        endpoint.publish("/api2");
+        return endpoint;
+    }
 
 }

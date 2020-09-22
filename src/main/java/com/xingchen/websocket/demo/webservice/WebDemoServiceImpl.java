@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 public class WebDemoServiceImpl implements WebDemoService {
 
     @Override
-    public String sayHello(String user) {
-        return user + "，现在时间：" + "(" + LocalDateTime.now() + ")";
+    public String sayHello(String user, Integer age) {
+        return user + "，年龄：" + age + "，现在时间：" + "(" + LocalDateTime.now() + ")";
     }
 }
